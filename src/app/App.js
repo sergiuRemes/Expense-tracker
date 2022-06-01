@@ -1,17 +1,22 @@
-import Transactions from "../features/transactions/Transactions";
-import Budgets from "../features/budgets/Budgets";
+// import './App.css';
 import React from "react";
+import ArticlePreviews from "../features/articlePreviews/ArticlePreviews";
+import CurrentArticle from "../features/currentArticle/CurrentArticle";
+import Comments from "../features/comments/Comments";
 
-import "../styles.css";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Expense Tracker</h1>
-        <Budgets />
-        <Transactions />
-      </header>
+      <header className="App-header" />
+      <main>
+        <div className="current-article">
+          <CurrentArticle />
+          <Comments />
+        </div>
+        <ArticlePreviews />
+      </main>
     </div>
   );
 }

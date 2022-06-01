@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import transactionsReducer from "../features/transactions/transactionsSlice";
-import budgetsReducer from "../features/budgets/budgetsSlice";
+import articlePreviewsReducer from "../features/articlePreviews/articlePreviewsSlice";
+import currentArticleReducer from "../features/currentArticle/currentArticleSlice";
+import commentsReducer from "../features/comments/commentsSlice";
 
 export default configureStore({
   reducer: {
-    transactions: transactionsReducer,
-    budgets: budgetsReducer
+    articlePreviews: articlePreviewsReducer,
+    currentArticle: currentArticleReducer,
+    comments: commentsReducer
   }
 });
